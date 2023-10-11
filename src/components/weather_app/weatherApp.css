@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Isans;
+    src: url("../assets/fonts/IRANSansWeb.ttf");
+}
+
+:root{
+    --font : isans,sans-serif;
+
+}
+html{
+    background: #EEEDED;
+}
+body{
+    font-family: var(--font);
+    margin: 0;
+}
+
+.container{
+    width: 607px;
+    height: 900px;
+    margin: 50px auto 50px auto;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg , #130754 , #3b2f80 100%);
+}
+@media only screen and (max-width: 600px){
+
+    .container{
+        width: 95%;
+        height: 760px;
+    }
+    .top-bar{
+        gap: 5px!important;
+        margin: 0 50px ;
+    }
+    .top-bar input{
+        height: 50px!important;
+        width: 180px!important;
+        font-size: 1rem!important;
+    }
+    .search-icon{
+        width: 20%!important;
+
+    }
+    .weather-image img{
+        width: 40%;
+        margin: 10px 0 10px 0;
+    }
+    .weather-temp{
+        font-size: 5.5rem!important;
+    }
+    .weather-location{
+        font-size: 3.5rem!important;
+    }
+}
+input , button{
+    font-family: var(--font);
+}
+.top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding: 60px 0 0 0 ;
+}
+.top-bar input{
+    direction: rtl;
+    display: flex;
+    width: 362px;
+    height: 78px;
+    background: #EEEDED;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 0 10% 0 0;
+    color: #626262;
+    font-size: 1.3rem;
+}
+.top-bar input::placeholder{
+    color: #626262;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    background: #EEEDED;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.weather-image{
+    margin: 29px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+.weather-temp{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 9rem;
+    font-weight: 400 ;
+}
+.weather-location{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.data-container{
+    margin: 50px 0 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+.element{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.data{
+    font-size: 34px;
+    font-weight: 400;
+}
+.text{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.icon{
+    margin: 10px 0 0 0;
+}
